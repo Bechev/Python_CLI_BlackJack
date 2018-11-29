@@ -258,5 +258,5 @@ class Game:
             player.hand_score = 0
             player.hand_status = "loosing"
 
-game = Game()
-game.play_game()
+# game = Game()
+# game.play_game()

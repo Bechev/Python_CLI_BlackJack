@@ -44,11 +44,11 @@ def test_deck_randomization(my_deck):
 ])
 
 def test_cart_drawn(my_deck, number_of_cards_drawn, expected_output):
-    assert len(my_deck.draw_cards(number_of_cards_drawn)) == expected_output
+    assert len(my_deck.feed_n_cards(number_of_cards_drawn)) == expected_output
 
 def test_raises_exception_on__number_of_cards_drawn_superior_to_rest_of_deck(my_deck):
     with pytest.raises(IndexError):
-        my_deck.draw_cards(53)
+        my_deck.feed_n_cards(53)
 #######################################################
 
 
