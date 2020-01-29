@@ -171,6 +171,7 @@ class Game:
             self.reset_table()
         else: 
             self.play = False
+            
 
 
     def collect_bets(self, player):
@@ -258,5 +259,5 @@ class Game:
             player.hand_score = 0
             player.hand_status = "loosing"
 
-# game = Game()
-# game.play_game()
+game = Game()
+game.play_game()
